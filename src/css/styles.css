@@ -1,0 +1,6 @@
+@import "screen/home-screen.css";
+
+html,body{
+    font-family: 'Open Sans', sans-serif;
+    height: 100%
+}
