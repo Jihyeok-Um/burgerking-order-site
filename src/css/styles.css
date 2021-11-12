@@ -1,4 +1,5 @@
 @import "screen/home-screen.css";
+@import "component/header.css";
 
 html,body{
     font-family: 'Open Sans', sans-serif;

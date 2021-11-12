@@ -14,8 +14,20 @@ body {
     width: 100%;
     background-color: tomato;
     margin: 0px;
+    animation: hideSplashScreen 0.4s ease-in-out forwards;
+    animation-delay: 2s;
 }
 
 .loading-img {
     height: 500px;
+}
+
+@keyframes hideSplashScreen {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
 }
