@@ -1,7 +1,7 @@
 @import "screen/home-screen.css";
 @import "component/header.css";
-@import "/src/css/test.css";
-@import "/src/css/screen/order.css";
+@import "/src/css/reset.css";
+@import "/src/css/screen/home.css";
 
 html,body{
     font-family: 'Open Sans', sans-serif;

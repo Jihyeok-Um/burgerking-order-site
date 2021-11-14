@@ -10,7 +10,6 @@
 }
 
 body {
-    height: 1000vh;
     display: flex;
     background-color: tomato;
     flex-direction: column;
@@ -74,6 +73,11 @@ body {
 @keyframes upScreen {
     from { }
 	to { -webkit-transform: translateY(-100%); }
+}
+
+@keyframes downScreen {
+    from {}
+    to { -webkit-transform: translateY(100%); }
 }
 
  
