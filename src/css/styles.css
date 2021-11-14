@@ -2,8 +2,10 @@
 @import "component/header.css";
 @import "/src/css/reset.css";
 @import "/src/css/screen/home.css";
+@import "/src/css/test.css";;
 
 html,body{
     font-family: 'Open Sans', sans-serif;
+    overflow: hidden;
     height: 100%
 }

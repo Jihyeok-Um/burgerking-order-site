@@ -1,5 +1,5 @@
 .loading__screen {
-    height: 100%;
+    min-height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -8,11 +8,47 @@
     animation: upScreen 1s ease-in-out forwards;
     animation-delay: 2s;
 }
-
-body {
+.roll__screen {
+    min-height: 100vh;
+    width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: tomato;
+    animation: upScreen 1s ease-in-out forwards;
+    animation-delay: 2s;
+}
+
+.roll__1 {
+    background-color: violet;
+}
+
+.roll__2 {
+    background-color: bisque;
+}
+
+.roll__3 {
+    background-color: green;
+}
+
+.roll__4 {
+    background-color: orange;
+}
+
+.roll__5 {
+    background-color: gray;
+}
+
+.roll__6 {
+    background-color: navy;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    background-color: white;
     flex-direction: column;
+    overflow:hidden;
 }
 
 .loading__animation {
@@ -71,15 +107,9 @@ body {
 }
 
 @keyframes upScreen {
-    from { }
-	to { -webkit-transform: translateY(-100%); }
-}
-
-@keyframes downScreen {
     from {}
-    to { -webkit-transform: translateY(100%); }
+	to { -webkit-transform: translateY(-100%); height: 0%;}
 }
-
  
 .mouse {
     opacity: 0;
@@ -101,7 +131,7 @@ body {
 	opacity: 1;
 }
 .scroll-link {
-	position: absolute;
+	position: fixed;
 	bottom: 1rem;
 	left: 50%;
 	transform: translateX(-50%);
