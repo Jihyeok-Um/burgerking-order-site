@@ -12,6 +12,7 @@ body {
     align-items: center;
     height: 100%;
     width: 100%;
+    position: absolute;
     background-color: tomato;
     margin: 0px;
     animation: hideSplashScreen 0.4s ease-in-out forwards;

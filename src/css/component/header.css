@@ -1,7 +1,7 @@
 .main-header-bar {
     display: flex;
     width: 100%;
-    color: wheat;
+    background-color: wheat;
 }
 
 .main-header {
