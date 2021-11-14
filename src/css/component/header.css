@@ -1,11 +1,19 @@
-.main-header-bar {
+
+.home__header {
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    background-color: wheat;
+    height: 8%;
+    background-color: #F5EBDC;;
+    position: absolute;
+    top: 0%;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
 }
 
-.main-header {
-    display: flex;
-    width: 100%;
-    height: 10%;
+.home__header__logo {
+    position: absolute;
+    top: -25%;
+    width: 130px;
 }
