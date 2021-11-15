@@ -1,43 +1,25 @@
-setTimeout(function() {
-	window.onload = function(){
-		const elm = document.querySelectorAll('.section');
-		const elmCount = elm.length-1;
-		elm.forEach(function(item, index){
-		  item.addEventListener('mousewheel', function(event){
-			event.preventDefault();
-			let delta = 0;
-	  
-			if (!event) event = window.event;
-			if (event.wheelDelta) {
-				delta = event.wheelDelta / 120;
-				if (window.opera) delta = -delta;
-			} 
-			else if (event.detail)
-				delta = -event.detail / 3;
-	  
-			let moveTop = window.scrollY;
-			let elmSelector = elm[index];
-	  
-			// wheel down : move to next section
-			if (delta < 0){
-			  if (elmSelector !== elmCount-1){
-				try{
-				  moveTop = window.pageYOffset + elmSelector.nextElementSibling.getBoundingClientRect().top;
-				}catch(e){}
-			  }
-			}
-			// wheel up : move to previous section
-			else{
-			  if (elmSelector !== 0){
-				try{
-				  moveTop = window.pageYOffset + elmSelector.previousElementSibling.getBoundingClientRect().top;
-				}catch(e){}
-			  }
-			}
-	  
-			const body = document.querySelector('html');
-			window.scrollTo({top:moveTop, left:0, behavior:'smooth'});
-		  });
-		});
-	  }
-}, 3000);
+window.onload = function(){//모든 html 요소가 준비되어야 작동시작
+	const page = document.querySelectorAll('.section');
+	const lastPage = page.length;
+  let curPage = 1;
+  const pageHeight = window.innerHeight;
+  let curHeight = 0;
+
+  function scroll(event) {
+    event.preventDefault();
+    if (event.deltaY > 0 && curPage < lastPage) {
+      curHeight += pageHeight;
+      window.scrollTo({top:curHeight, left:0, behavior:'smooth'})
+      curPage++;
+    }
+    else if (event.deltaY < 0 && curPage > 1) {
+      curHeight -= pageHeight;
+      window.scrollTo({top:curHeight, left:0, behavior:'smooth'})
+      curPage--;
+    }
+  }
+
+  setTimeout(function()
+    {window.addEventListener("wheel", scroll);
+  },3000)
+}
