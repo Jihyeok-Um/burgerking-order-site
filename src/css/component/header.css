@@ -1,0 +1,35 @@
+.home__header {
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    width: 100%;
+    height: 13%;
+    position: fixed;
+    animation: appear 1s ease-in-out forwards;
+    animation-delay: 3s;
+    transition: background-color .5s;
+    color: white;
+}
+
+.home__header__box {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.home__header__logo {
+    height: 120px;
+}
+
+@keyframes appear {
+    from {}
+    to {opacity: 1;}
+}
+
+.home__header:hover {
+    background-color: white;
+    color: black;
+}

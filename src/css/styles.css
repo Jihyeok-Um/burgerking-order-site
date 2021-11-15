@@ -1,4 +1,3 @@
-@import "screen/home-screen.css";
 @import "component/header.css";
 @import "/src/css/reset.css";
 @import "/src/css/screen/home.css";
@@ -13,5 +12,4 @@ html,body{
     width: 100%;
     height: 100%;
     margin: 0;
-    height: 100%
 }
