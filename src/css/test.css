@@ -10,6 +10,22 @@ html,body{
     margin: 0;
 }
 
+.section {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #F5EBDC;
+    animation: upScreen 1s ease-in-out forwards;
+    animation-delay: 2s;
+}
+
+#section1 {
+    background-color: tomato;
+}
+
 #section2 {
     background-color: lightpink;
 }
