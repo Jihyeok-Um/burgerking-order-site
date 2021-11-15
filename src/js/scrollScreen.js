@@ -2,10 +2,10 @@ window.onload = function(){//모든 html 요소가 준비되어야 작동시작
 	const page = document.querySelectorAll('.section');
 	const lastPage = page.length;
   let curPage = 1;
-  const pageHeight = window.innerHeight;
   let curHeight = 0;
 
   function scroll(event) {
+	const pageHeight = window.innerHeight;
     event.preventDefault();
     if (event.deltaY > 0 && curPage < lastPage) {
       curHeight += pageHeight;
