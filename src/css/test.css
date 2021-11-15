@@ -1,32 +1,23 @@
-body {
-    margin: 0;
+html {
     overflow: hidden;
-  }
-  .header {
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    height: 50px;
-    background: rgba(0, 0, 0, 0.7);
-  }
-  .header > ul {
-    list-style: none;  
-    margin: 0;
-    padding-left: 0;
+}
+
+html,body{
+    font-family: 'Open Sans', sans-serif;
+    display: block;
+    width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0 30px;
-  }
-  
-  .main > section {
-    min-height: 100vh;
-    padding-top: 70px;
-  }
-  
-  .footer {
-    background: #CCC;
-    overflow: hidden;
-  }
+    margin: 0;
+}
+
+#section2 {
+    background-color: lightpink;
+}
+
+#section3 {
+    background-color: coral;
+}
+
+#section4 {
+    background-color: aqua;
+}

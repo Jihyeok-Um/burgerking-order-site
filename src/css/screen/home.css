@@ -1,55 +1,32 @@
-.loading__screen {
+
+.section {
     min-height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     background-color: #F5EBDC;
     animation: upScreen 1s ease-in-out forwards;
     animation-delay: 2s;
 }
-.roll__screen {
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.section1 {
     background-color: tomato;
-    animation: upScreen 1s ease-in-out forwards;
-    animation-delay: 2s;
 }
 
-.roll__1 {
-    background-color: violet;
-}
-
-.roll__2 {
+.section2 {
     background-color: bisque;
 }
 
-.roll__3 {
+.section3 {
     background-color: green;
 }
 
-.roll__4 {
+.section4 {
     background-color: orange;
 }
 
-.roll__5 {
-    background-color: gray;
-}
-
-.roll__6 {
-    background-color: navy;
-}
-
-main {
-    height: 100vh;
-    display: flex;
-    background-color: white;
-    flex-direction: column;
-    overflow:hidden;
-}
 
 .loading__animation {
     position: absolute;

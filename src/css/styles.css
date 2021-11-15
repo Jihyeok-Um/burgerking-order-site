@@ -4,8 +4,15 @@
 @import "/src/css/screen/home.css";
 @import "/src/css/test.css";;
 
+html {
+    overflow: hidden;
+}
+
 html,body{
     font-family: 'Open Sans', sans-serif;
-    overflow: hidden;
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
     height: 100%
 }
