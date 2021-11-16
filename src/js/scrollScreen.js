@@ -5,15 +5,13 @@ let curHeight = 0;
 
 function scroll(event) {
   const pageHeight = window.innerHeight;
-  if (event.deltaY > 0 && curPage < lastPage) {
-    curHeight += pageHeight;
-    window.scrollTo({top:curHeight, left:0, behavior:'smooth'})
+  if (event.deltaY > 0 && curPage < lastPage){ 
     curPage++;
+    window.scrollTo({top:curPage*pageHeight, left:0, behavior:'smooth'})
   }
-  else if (event.deltaY < 0 && curPage > 2) {
-    curHeight -= pageHeight;
-    window.scrollTo({top:curHeight, left:0, behavior:'smooth'})
+  else if (event.deltaY < 0 && curPage > 1) {
     curPage--;
+    window.scrollTo({top:curPage*pageHeight, left:0, behavior:'smooth'})
   }
 }
 setTimeout(function()
