@@ -10,7 +10,7 @@ function scroll(event) {
     window.scrollTo({top:curHeight, left:0, behavior:'smooth'})
     curPage++;
   }
-  else if (event.deltaY < 0 && curPage > 1) {
+  else if (event.deltaY < 0 && curPage > 2) {
     curHeight -= pageHeight;
     window.scrollTo({top:curHeight, left:0, behavior:'smooth'})
     curPage--;
@@ -18,4 +18,5 @@ function scroll(event) {
 }
 setTimeout(function()
   {window.addEventListener("wheel", scroll);
-},3000)
+},2800)
+

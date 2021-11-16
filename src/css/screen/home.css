@@ -8,8 +8,6 @@
     align-items: center;
     position: relative;
     background-color: #F5EBDC;
-    animation: upScreen 1s ease-in-out forwards;
-    animation-delay: 2s;
 }
 
 .section1 {
