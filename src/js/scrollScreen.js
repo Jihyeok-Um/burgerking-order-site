@@ -1,4 +1,4 @@
-window.onload = function(){//모든 html 요소가 준비되어야 작동시작
+window.onload = function(){
 	const page = document.querySelectorAll('.section');
 	const lastPage = page.length;
   let curPage = 1;
@@ -6,7 +6,6 @@ window.onload = function(){//모든 html 요소가 준비되어야 작동시작
   let curHeight = 0;
 
   function scroll(event) {
-    event.preventDefault();
     if (event.deltaY > 0 && curPage < lastPage) {
       curHeight += pageHeight;
       window.scrollTo({top:curHeight, left:0, behavior:'smooth'})
