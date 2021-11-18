@@ -21,6 +21,7 @@
     align-items: center;
 }
 
+
 .home__header__logo {
     height: 120px;
 }
@@ -31,6 +32,11 @@
 }
 
 .home__header:hover {
+    background-color: white;
+    color: black;
+}
+
+.home__header.is-active {
     background-color: white;
     color: black;
 }

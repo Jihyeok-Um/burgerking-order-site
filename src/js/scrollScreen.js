@@ -4,6 +4,10 @@ let curPage = 1;
 let curHeight = 0;
 
 function scroll(event) {
+  if(menu.classList.contains("is-active")){
+    return 0;
+  }
+
   const pageHeight = window.innerHeight;
   if (event.deltaY > 0 && curPage < lastPage){ 
     curPage++;
