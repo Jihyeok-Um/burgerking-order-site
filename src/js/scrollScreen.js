@@ -1,6 +1,6 @@
 const page = document.querySelectorAll('.section');
 const lastPage = page.length;
-let curPage = 1;
+let curPage = 0;
 let curHeight = 0;
 
 function scroll(event) {

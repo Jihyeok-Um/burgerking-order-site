@@ -1,10 +1,11 @@
 window.onload = function () {
     setTimeout(function () {
+        console.log("work");
         window.scrollTo(0, 0);
-    },1);
+    },100);
     setTimeout(function(){
         const pageHeight = window.innerHeight;
         window.scrollTo({top:pageHeight, left:0, behavior:'smooth'});
+        curPage++;
     },2500)
-
 }
