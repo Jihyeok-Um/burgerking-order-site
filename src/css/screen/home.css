@@ -128,7 +128,6 @@
     display: inline-block;
 }
 .menu-icon path {
-    stroke: white;
     stroke-width: 5;
     stroke-linecap: round;
     transition: all 250ms ease-in-out;

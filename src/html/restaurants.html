@@ -8,6 +8,42 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <header class="restaurants__header">
+        <div class="header__box">
+            <div class="menu-button">
+                <svg class="menu-icon menu-icon__notHome" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                  <g fill="none" fill-rule="evenodd" stroke="white">
+                    <path d="M13,26.5 L88,26.5"/>
+                    <path d="M13,50.5 L88,50.5"/>
+                    <path d="M13,50.5 L88,50.5"/>
+                    <path d="M13,74.5 L88,74.5"/>
+                  </g>
+                </svg>
+            </div>
+        </div>
+        <div class="header__box">
+            <img class="header__logo" src="/src/image/burger-king-logo.png">
+        </div>
+        <div class="header__box">
+            <i class="fab fa-instagram fa-2x"></i>
+            <i class="fab fa-facebook-square fa-2x"></i>
+            <i class="fab fa-youtube fa-2x"></i>
+        </div>
+    </header>
+
+    <ul class="home__menu">
+        <a class="home__menu__list" href="/src/html/home.html">Home</a>
+        <a class="home__menu__list" href="/src/html/home.html">Menu</a>
+        <a class="home__menu__list" href="/src/html/restaurants.html">Restaurants</a>
+        <a class="home__menu__list" href="/src/html/home.html">Delivery</a>
+    </ul>
+
+    <div class="map"></div>
+
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=1e34cbc5b4c292b2723f24a9102f5761"></script>
+    <script src="/src/js/kakakoMapApi.js"></script>
+    <script src="/src/js/resize.js"></script>
+    <script src="/src/js/menuopen.js"></script>
+    <script src="https://kit.fontawesome.com/e9d46ad7c4.js" crossorigin="anonymous"></script>
 </body>
 </html>
