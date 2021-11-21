@@ -3,5 +3,4 @@ window.onresize = function () {
     section.innerHeight = window.innerHeight;
     const pageHeight = window.innerHeight;
     window.scrollTo({top:pageHeight*curPage, left:0, behavior:'auto'});
-    console.log(curPage);
 }

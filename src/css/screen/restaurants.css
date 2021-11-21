@@ -3,6 +3,11 @@
     width: 100%;
 }
 
-.menu-icon__notHome path {
+.menu-icon-notHome path {
     stroke: black;
+}
+
+.restaurants__header {
+    background-color: white;
+    color: black;
 }

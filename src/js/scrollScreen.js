@@ -4,7 +4,7 @@ let curPage = 0;
 let curHeight = 0;
 
 function scroll(event) {
-  if(menu.classList.contains("is-active")){
+  if(menuTree.classList.contains("is-active")){
     return 0;
   }
 

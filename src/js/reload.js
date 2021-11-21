@@ -1,6 +1,5 @@
 window.onload = function () {
     setTimeout(function () {
-        console.log("work");
         window.scrollTo(0, 0);
     },100);
     setTimeout(function(){
