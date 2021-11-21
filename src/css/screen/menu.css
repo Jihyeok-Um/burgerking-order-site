@@ -12,3 +12,8 @@
     height: 13%;
     bottom: 0%;
 }
+
+canvas {
+    height: 100%;
+    width: 100%;
+}

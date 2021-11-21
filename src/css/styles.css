@@ -10,6 +10,13 @@
 @import "/src/css/screen/restaurants.css";
 @import "/src/css/screen/menu.css";
 
+
+* {
+    outline: 0;
+    margin: 0;
+    padding: 0;
+}
+
 html {
     overflow: hidden;
 }
@@ -20,7 +27,7 @@ html,body{
     width: 100%;
     height: 100%;
     margin: 0;
-    background-color: tomato;
+    background-color: #F5EBDC;
 }
 
 header {
