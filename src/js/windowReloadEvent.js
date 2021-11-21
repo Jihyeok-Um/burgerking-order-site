@@ -1,10 +1,9 @@
-window.onload = function () {
-    setTimeout(function () {
-        window.scrollTo(0, 0);
-    },100);
-    setTimeout(function(){
-        const pageHeight = window.innerHeight;
-        window.scrollTo({top:pageHeight, left:0, behavior:'smooth'});
-        curPage++;
-    },2500)
+function reloadScrollScreen(){
+    const pageHeight = window.innerHeight;
+    window.scrollTo({top:pageHeight, left:0, behavior:'smooth'});
+    curPage++;
+}
+window.onload = () => {
+    window.setTimeout(window.scrollTo(0, 0),100);
+    window.setTimeout(reloadScrollScreen,2500);
 }

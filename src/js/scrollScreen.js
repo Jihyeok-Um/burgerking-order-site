@@ -17,7 +17,5 @@ function scrollScreen(event) {
   }
 }
 
-setTimeout(function()
-  {window.addEventListener("wheel", scrollScreen);
-},2800)
+window.setTimeout(window.addEventListener("wheel", scrollScreen),2800);
 
