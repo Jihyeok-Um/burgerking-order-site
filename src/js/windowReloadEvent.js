@@ -4,6 +4,7 @@ function reloadScrollScreen(){
     curPage++;
 }
 window.onload = () => {
-    window.setTimeout(window.scrollTo(0, 0),100);
+    console.log("work");
+    setTimeout(() => {window.scrollTo(0, 0)},100);
     window.setTimeout(reloadScrollScreen,2500);
 }

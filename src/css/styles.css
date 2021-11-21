@@ -8,6 +8,7 @@
 @import "/src/css/reset.css";
 @import "/src/css/screen/home.css";
 @import "/src/css/screen/restaurants.css";
+@import "/src/css/screen/menu.css";
 
 html {
     overflow: hidden;

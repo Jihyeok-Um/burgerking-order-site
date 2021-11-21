@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Burgerking</title>
 </head>
 <body>
-    <header class="restaurants__header">
+    <header class="menu-header">
         <div class="header-container">
             <div class="menu-button">
-                <svg class="menu-icon menu-icon-notHome menu-tree-class-for-toggle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                <svg class="menu-icon menu-tree-class-for-toggle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
                   <g fill="none" fill-rule="evenodd" stroke="white">
                     <path d="M13,26.5 L88,26.5"/>
                     <path d="M13,50.5 L88,50.5"/>
@@ -38,14 +38,15 @@
         <a class="menu-tree-list menu-tree-class-for-toggle" href="/src/html/home.html">Delivery</a>
     </ul>
 
-    <div class="map"></div>
+    <footer class="menu-footer">
+        <a class="shopping-cart-button" href="/src/html/shoppingCart.html">
+            <i class="fas fa-shopping-cart fa-5x"></i>
+        </a>
+    </footer>
 
-    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=1e34cbc5b4c292b2723f24a9102f5761&libraries=services,clusterer,drawing"></script>
     <script src="/src/js/index.js"></script>
-    <script src="/src/js/kakaoMapApi.js"></script>
     <script src="/src/js/windowResizeEvent.js"></script>
     <script src="/src/js/menuTreeOpen.js"></script>
-    <script src="/src/js/scrollScreen.js"></script>
     <script src="https://kit.fontawesome.com/e9d46ad7c4.js" crossorigin="anonymous"></script>
 </body>
 </html>
