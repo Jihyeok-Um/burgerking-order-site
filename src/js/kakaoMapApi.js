@@ -25,6 +25,7 @@ if (navigator.geolocation) {
 const map = new kakao.maps.Map(container, options);
 const ps = new kakao.maps.services.Places(); 
 ps.keywordSearch('버거킹', placesSearchCB);
+
 function placesSearchCB (data, status, pagination) {
     if (status === kakao.maps.services.Status.OK) {
         const bounds = new kakao.maps.LatLngBounds();
