@@ -1,1 +1,5 @@
-const $ = (selector) => document.querySelector(selector);
+import { $ } from './util/dom.js';
+
+function App() {}
+
+const app = new App();
