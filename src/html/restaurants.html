@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-    <header class="restaurants__header">
+    <header class="restaurants-header">
         <div class="header-container">
             <div class="menu-button">
                 <svg id='menu-icon' class="menu-tree-class-for-toggle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
@@ -41,9 +41,8 @@
     <div class="map"></div>
 
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=1e34cbc5b4c292b2723f24a9102f5761&libraries=services,clusterer,drawing"></script>
-    <script src="/src/js/index.js"></script>
-    <script src="/src/js/kakaoMapApi.js"></script>
-    <script src="/src/js/scrollScreen.js"></script>
+    <script type="module" src="/src/js/index.js"></script>
+    <script type="module" src="/src/js/core/kakaoMapApi.js"></script>
     <script src="https://kit.fontawesome.com/e9d46ad7c4.js" crossorigin="anonymous"></script>
 </body>
 </html>

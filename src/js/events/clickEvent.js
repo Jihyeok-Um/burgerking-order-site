@@ -1,4 +1,4 @@
-import { $ } from '../util/dom.js';
+import { $ } from '../utils/dom.js';
 
 export const handleClick = e => {
   switch (e.target.id) {
