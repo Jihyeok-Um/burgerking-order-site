@@ -1,6 +1,6 @@
 import { Polygon } from '../component/polygon.js';
 
-class App {
+class RotateMenu {
   constructor() {
     this.canvas = document.createElement('canvas');
     document.body.appendChild(this.canvas);
@@ -63,6 +63,4 @@ class App {
   }
 }
 
-window.onload = () => {
-  new App();
-};
+new RotateMenu();
